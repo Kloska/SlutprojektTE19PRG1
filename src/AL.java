@@ -8,7 +8,7 @@ public class AL extends Frame implements WindowListener,ActionListener {
 
     public static void main(String[] args) {
         AL Fonster = new AL("Clicker");
-        Fonster.setSize(3500,1000);
+        Fonster.setSize(700,500);
         Fonster.setVisible(true);
     }
 
@@ -38,5 +38,4 @@ public class AL extends Frame implements WindowListener,ActionListener {
     public void windowDeiconified(WindowEvent e) {}
     public void windowDeactivated(WindowEvent e) {}
     public void windowClosed(WindowEvent e) {}
-
 }
