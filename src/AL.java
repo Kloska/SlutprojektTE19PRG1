@@ -2,12 +2,11 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class AL extends Frame implements WindowListener,ActionListener {
-    TextField text = new TextField(50);
     Button b;
     private int numClicks = 0;
+    static AL Fonster = new AL("Clicker");
 
     public static void main(String[] args) {
-        AL Fonster = new AL("Clicker");
         Fonster.setSize(700,500);
         Fonster.setVisible(true);
     }
@@ -17,14 +16,15 @@ public class AL extends Frame implements WindowListener,ActionListener {
         setLayout(new FlowLayout());
         addWindowListener(this);
         b = new Button("Klicka här");
+        b.setPreferredSize( new Dimension(700,500));
         add(b);
-        add(text);
         b.addActionListener(this);
     }
 
     public void actionPerformed(ActionEvent e) {
         numClicks++;
-        text.setText("Du har " + numClicks + " tegel");
+        b.setLabel("Klicks: " + numClicks);
+        b.setSize(Fonster.getWidth(), Fonster.getHeight());
     }
 
     public void windowClosing(WindowEvent e) {
