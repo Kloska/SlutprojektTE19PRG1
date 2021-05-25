@@ -4,7 +4,7 @@ import java.awt.event.*;
 public class AL extends Frame implements WindowListener,ActionListener {
     Button b;
     private int numClicks = 0;
-    static AL Fonster = new AL("Clicker");
+    static AL Fonster = new AL("Tegel clicker");
 
     public static void main(String[] args) {
         Fonster.setSize(700,500);
@@ -23,7 +23,7 @@ public class AL extends Frame implements WindowListener,ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         numClicks++;
-        b.setLabel("Klicks: " + numClicks);
+        b.setLabel("Tegelstenar: " + numClicks);
         b.setSize(Fonster.getWidth(), Fonster.getHeight());
     }
 
