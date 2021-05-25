@@ -1,7 +1,9 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
 public class AL extends Frame implements WindowListener,ActionListener {
+    private final Object Icon;
     Button b;
     private int numClicks = 0;
     static AL Fonster = new AL("Tegel clicker");
@@ -19,6 +21,8 @@ public class AL extends Frame implements WindowListener,ActionListener {
         b.setPreferredSize( new Dimension(700,500));
         add(b);
         b.addActionListener(this);
+        Icon icon = new ImageIcon("E:\\editicon.PNG");
+        b = new Button(Icon);
     }
 
     public void actionPerformed(ActionEvent e) {
