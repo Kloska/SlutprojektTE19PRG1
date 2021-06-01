@@ -3,9 +3,6 @@ Jag ska göra ett clicker spel. I spelet ska man kunna klicka på en tegelsten e
 valuta för varje klick, börjar på 1. Med valutan ska man kunna köpa uppgraderingar. Uppgraderingarna ska 
 öka valutan man får per klick.
 
-Föremålen ska samlas in genom att figuren som man styr kolliderar med ett fast föremål på en random position
-inom en spelplan(ruta).
-
 Viktigt att få fungerande:
 - Skapa en spelplan. 
 - Sätt ut en tegelsten / knapp
@@ -19,4 +16,3 @@ Viktigt att få fungerande:
 Extra:
 - Skapa fler uppgraderingar
 - Berätta för spelaren om den inte har råd att köpa en uppgradering
-- 
